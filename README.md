@@ -4,10 +4,10 @@
 
 * Ruby 3.0.1
 * Rails 7.0.4.3
-* `bundle install`
-* `rails server`
-* you can use **Postman** to make a **GET** request to: `localhost:3000/lines/:id` and check results.
-* `bundle exec rspec` to use the testing framework.
+* Run `bundle install`
+* Run `rails server`
+* You can use **Postman** to make a **GET** request to: `http://localhost:3000/lines/:id` and check results.
+* Run `bundle exec rspec` to use the testing framework.
 
 ## Answers
 
