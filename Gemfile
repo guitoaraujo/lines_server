@@ -41,6 +41,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'pry'
   gem 'pry-rails'
+  gem 'rspec-rails', '~> 6.0', '>= 6.0.2'
 end
 
 group :development do

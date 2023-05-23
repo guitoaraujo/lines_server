@@ -5,14 +5,14 @@ class LinesService
 
   def call
     file = IO.readlines('lines.txt', chomp: true)
-    return if @id > file.size
+    return nil if @id > file.size
 
     result = nil
-    file.each_with_index do |line, index|
-      if index == @id
-        result = line
-        break
-      end
+    file.each.with_index(1) do |line, index|
+      next unless index == @id
+
+      result = line
+      break
     end
 
     result
